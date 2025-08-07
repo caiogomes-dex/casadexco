@@ -13,6 +13,7 @@ Em caso de dúvidas, entrar em contato com: [caio.gomes@dex.co](mailto:caio.gome
 - [Objetivo](#objetivo)
 - [Overview e Descrições Técnicas](#overview-e-descrições-técnicas)
 - [Especificação de Micro-conversões](#especificação-de-micro-conversões)
+- [Jornada de Compra](#jornada-de-compra)
 - [Especificação de Conversões](#especificação-de-conversões)
 - [Considerações Finais](#considerações-finais)
 
@@ -190,7 +191,7 @@ dataLayer.push({
 
 ---
 
-## Jornada de E-commerce:
+## Jornada de Compra:
 
 <br />
 
@@ -887,6 +888,6 @@ dataLayer.push({
 <br />
 
 
-##Considerações finais: 
+### Considerações finais: 
 
 >Em caso de dúvidas, podem consultar a documentação técnica oficial do Google: Link(https://developers.google.com/tag-platform/tag-manager/datalayer?hl=pt-br)
