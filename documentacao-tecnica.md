@@ -113,7 +113,7 @@ A documentação foi descrita para algumas áreas especificas do ambiente Casa D
 ### Especificações Globais:
 
 **Itens Gerais:**<br />
-Todas as informações entre colchetes `$ $` são variáveis dinâmicas que devem ser preenchidas com seus respectivos valores; <br />
+Todas as informações entre `$ $` são variáveis dinâmicas que devem ser preenchidas com seus respectivos valores; <br />
 Todos os valores enviados ao Google Analytics devem estar sanitizados, ou seja, sem espaços, acentuação ou caracteres especiais; <br />
 Caso a informação solicitada não estiver disponível retornar 'nao_disponivel'. 
 
@@ -133,16 +133,18 @@ Caso a informação solicitada não estiver disponível retornar 'nao_disponivel
 dataLayer.push({
 		'event': 'menu',
 		'menu_principal': '$item-clicado$',
-		'menu_loja': '$item-clicado$'
+		'menu_loja': '$item-clicado$',
+		'submenu_loja': '$item-clicado$'
 	});
 ```
 
 <br />
 
-| Nome 			| Variável 			| Exemplo 							| Descrição 			|
-| :-------------------	| :-------------------		| :---------------------					| :------------------------	|
-| menu_principal	| $item-clicado$ 		| 'Nossas marcas', 'Pisos e Revestimentos', 'Ofertas' e etc	| Item do Menu Principal 	|
-| menu_loja		| $item-clicado$ 		| 'Todos os Chuveiros', 'Bacias e Sanitários' e etc		| Item do menu da loja (ícones)	|
+| Nome 					| Variável 				| Exemplo 													| Descrição 					|
+| :-------------------	| :-------------------	| :---------------------									| :------------------------		|
+| menu_principal		| $item-clicado$ 		| 'Nossas marcas', 'Pisos e Revestimentos', 'Ofertas' e etc	| Item do Menu Principal 		|
+| menu_loja				| $item-clicado$ 		| 'Todos os Chuveiros', 'Bacias e Sanitários' e etc			| Item do menu da loja (ícones)	|
+| submenu_loja			| $item-clicado$ 		| 'Sifoes', 'Cubas',										| Item do menu da loja (ícones)	|
 
 
 
@@ -162,9 +164,9 @@ dataLayer.push({
 
 <br />
 
-| Nome 		| Variável 		| Exemplo 				| Descrição 			|
-| :------------	| :-------------------	| :---------------------		| :------------------------	|
-| banner	| $nome-banner$ 	| 'Junta Seca', '5% off Pix' e etc	| Nome do banner clicado	|
+| Nome 			| Variável 				| Exemplo 							| Descrição 				|
+| :------------	| :-------------------	| :---------------------			| :------------------------	|
+| banner		| $nome-banner$ 		| 'Junta Seca', '5% off Pix' e etc	| Nome do banner clicado	|
 
 
 <br />
@@ -183,9 +185,9 @@ dataLayer.push({
 
 <br />
 
-| Nome 		| Variável 		| Exemplo 				| Descrição 			|
-| :------------	| :-------------------	| :---------------------		| :------------------------	|
-| banner	| $nome-banner$ 	| 'Junta Seca', '5% off Pix' e etc	| Nome do banner clicado	|
+| Nome 			| Variável 				| Exemplo 							| Descrição 				|	
+| :------------	| :-------------------	| :---------------------			| :------------------------	|
+| banner		| $nome-banner$ 		| 'Junta Seca', '5% off Pix' e etc	| Nome do banner clicado	|
 
 <br />
 
@@ -251,15 +253,16 @@ dataLayer.push({
 
 <br />
 
-| Nome 			| Variável 			| Exemplo 		| Descrição 					|
-| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  	|
-| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 				|
-| item_id		| $id-produto$ 			| 'SKU_45678'		| ID do produto 				|
-| price			| $preco-produto$ 		| '299.99' 		| Preço do produto				|
-| item_brand 		| $marca-produto$ 		| 'Deca'		| Marca do produto 	 			|
-| item_category		| $categoria-produto$ 		| 'Cuba'		| Categoria do produto 				|
-| item_variant 		| $variacao-produto$ 		| 'branco'		| Variação do produto (tamanho - cor)		|
-| item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
+| Nome 					| Variável 					| Exemplo 				| Descrição 							|	
+| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  |
+| item_name 			| $nome-produto$ 			| 'Cuba de Apoio' 		| Nome do produto 						|
+| item_id				| $id-produto$ 				| 'SKU_45678'			| ID do produto 						|
+| price					| $preco-produto$ 			| '299.99' 				| Preço do produto						|
+| item_brand 			| $marca-produto$ 			| 'Deca'				| Marca do produto 	 					|
+| item_category			| $categoria-produto$ 		| 'Cuba'				| Categoria do produto 					|
+| item_variant 			| $variacao-produto$ 		| 'branco'				| Variação do produto (tamanho - cor)	|
+| item_list_name 		| $lista-produto$ 			| 'Cuba de Apoio'		| Nome da lista de produtos 			|
+
 
 
 <br />
@@ -302,14 +305,14 @@ dataLayer.push({
 
 <br />
 
-| Nome 			| Variável 			| Exemplo 		| Descrição 					|
-| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  	|
-| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 				|
-| item_id		| $id-produto$ 			| 'SKU_45678'		| ID do produto 				|
-| price			| $preco-produto$ 		| '299.99' 		| Preço do produto				|
-| item_brand 		| $marca-produto$ 		| 'Deca'		| Marca do produto 	 			|
-| item_category		| $categoria-produto$ 		| 'Cuba'		| Categoria do produto 				|
-| item_variant 		| $variacao-produto$ 		| 'branco'		| Variação do produto (tamanho - cor)		|
+| Nome 				| Variável 				| Exemplo 			| Descrição 							|
+| :--------------	| :-------------------	| :---------------- | :----------------------------	 	 	|
+| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 						|
+| item_id			| $id-produto$ 			| 'SKU_45678'		| ID do produto 						|
+| price				| $preco-produto$ 		| '299.99' 			| Preço do produto						|
+| item_brand 		| $marca-produto$ 		| 'Deca'			| Marca do produto 	 					|
+| item_category		| $categoria-produto$ 	| 'Cuba'			| Categoria do produto 					|
+| item_variant 		| $variacao-produto$ 	| 'branco'			| Variação do produto (tamanho - cor)	|
 | item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
 
 <br />
@@ -352,14 +355,14 @@ dataLayer.push({
 
 <br />
 
-| Nome 			| Variável 			| Exemplo 		| Descrição 					|
-| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  	|
-| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 				|
-| item_id		| $id-produto$ 			| 'SKU_45678'		| ID do produto 				|
-| price			| $preco-produto$ 		| '299.99' 		| Preço do produto				|
-| item_brand 		| $marca-produto$ 		| 'Deca'		| Marca do produto 	 			|
-| item_category		| $categoria-produto$ 		| 'Cuba'		| Categoria do produto 				|
-| item_variant 		| $variacao-produto$ 		| 'branco'		| Variação do produto (tamanho - cor)		|
+| Nome 				| Variável 				| Exemplo 			| Descrição 							|
+| :---------------	| :-------------------	| :--------------	| :------------------------------  		|
+| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 						|
+| item_id			| $id-produto$ 			| 'SKU_45678'		| ID do produto 						|
+| price				| $preco-produto$ 		| '299.99' 			| Preço do produto						|
+| item_brand 		| $marca-produto$ 		| 'Deca'			| Marca do produto 	 					|
+| item_category		| $categoria-produto$ 	| 'Cuba'			| Categoria do produto 					|
+| item_variant 		| $variacao-produto$ 	| 'branco'			| Variação do produto (tamanho - cor)	|
 | item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
 <br />
 
@@ -377,7 +380,7 @@ dataLayer.push({
     value: 299.99,
     items: [
     {
-      item_id: "SKU_45678",
+      	item_id: "SKU_45678",
       	item_name: "Cuba de Apoio Quadrada Deca",
       	affiliation: "Deca",
       	coupon: "Frete10",
@@ -389,7 +392,7 @@ dataLayer.push({
       	item_list_id: "98765",
       	item_list_name: "Cuba de Apoio",
       	item_variant: "branco",
-	      in_stock: true, //caso o produto esteja indisponível, colocar como false
+		in_stock: true, //caso o produto esteja indisponível, colocar como false
       	location_id: "abc12345",
       	price: 299.99,
       	quantity: 1
@@ -402,14 +405,14 @@ dataLayer.push({
 
 <br />
 
-| Nome 			| Variável 			| Exemplo 		| Descrição 					|
-| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  	|
-| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 				|
-| item_id		| $id-produto$ 			| 'SKU_45678'		| ID do produto 				|
-| price			| $preco-produto$ 		| '299.99' 		| Preço do produto				|
-| item_brand 		| $marca-produto$ 		| 'Deca'		| Marca do produto 	 			|
-| item_category		| $categoria-produto$ 		| 'Cuba'		| Categoria do produto 				|
-| item_variant 		| $variacao-produto$ 		| 'branco'		| Variação do produto (tamanho - cor)		|
+| Nome 				| Variável 				| Exemplo 			| Descrição 							|
+| :---------------	| :-------------------	| :-----------------| :--------------------------  			|
+| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 						|
+| item_id			| $id-produto$ 			| 'SKU_45678'		| ID do produto 						|
+| price				| $preco-produto$ 		| '299.99' 			| Preço do produto						|
+| item_brand 		| $marca-produto$ 		| 'Deca'			| Marca do produto 	 					|
+| item_category		| $categoria-produto$ 	| 'Cuba'			| Categoria do produto 					|
+| item_variant 		| $variacao-produto$ 	| 'branco'			| Variação do produto (tamanho - cor)	|
 | item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
 
 <br />
@@ -453,14 +456,14 @@ dataLayer.push({
 
 <br />
 
-| Nome 			| Variável 			| Exemplo 		| Descrição 					|
-| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  	|
-| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 				|
-| item_id		| $id-produto$ 			| 'SKU_45678'		| ID do produto 				|
-| price			| $preco-produto$ 		| '299.99' 		| Preço do produto				|
-| item_brand 		| $marca-produto$ 		| 'Deca'		| Marca do produto 	 			|
-| item_category		| $categoria-produto$ 		| 'Cuba'		| Categoria do produto 				|
-| item_variant 		| $variacao-produto$ 		| 'branco'		| Variação do produto (tamanho - cor)		|
+| Nome 				| Variável 				| Exemplo 			| Descrição 							|
+| :----------------	| :-------------------	| :---------------	| :--------------------------------  	|
+| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 						|
+| item_id			| $id-produto$ 			| 'SKU_45678'		| ID do produto 						|
+| price				| $preco-produto$ 		| '299.99' 			| Preço do produto						|
+| item_brand 		| $marca-produto$ 		| 'Deca'			| Marca do produto 	 					|
+| item_category		| $categoria-produto$ 	| 'Cuba'			| Categoria do produto 					|
+| item_variant 		| $variacao-produto$ 	| 'branco'			| Variação do produto (tamanho - cor)	|
 | item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
 
 <br />
@@ -688,14 +691,14 @@ dataLayer.push({
 
 <br />
 
-| Nome 			| Variável 			| Exemplo 		| Descrição 					|
-| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  	|
-| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 				|
-| item_id		| $id-produto$ 			| 'SKU_45678'		| ID do produto 				|
-| price			| $preco-produto$ 		| '299.99' 		| Preço do produto				|
-| item_brand 		| $marca-produto$ 		| 'Deca'		| Marca do produto 	 			|
-| item_category		| $categoria-produto$ 		| 'Cuba'		| Categoria do produto 				|
-| item_variant 		| $variacao-produto$ 		| 'branco'		| Variação do produto (tamanho - cor)		|
+| Nome 				| Variável 				| Exemplo 			| Descrição 							|
+| :----------------	| :-------------------	| :-----------------| :-----------------------------		|
+| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 						|
+| item_id			| $id-produto$ 			| 'SKU_45678'		| ID do produto 						|
+| price				| $preco-produto$ 		| '299.99' 			| Preço do produto						|
+| item_brand 		| $marca-produto$ 		| 'Deca'			| Marca do produto 	 					|
+| item_category		| $categoria-produto$ 	| 'Cuba'			| Categoria do produto 					|
+| item_variant 		| $variacao-produto$ 	| 'branco'			| Variação do produto (tamanho - cor)	|
 | item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
 
 
@@ -812,12 +815,12 @@ dataLayer.push({
       	discount: 10.00,
       	index: 0,
         item_brand: "Deca",
-     	  item_category: "Cuba",
+     	item_category: "Cuba",
   	    item_category2: "Apoio",
       	item_list_id: "98765",
       	item_list_name: "Cuba de Apoio",
       	item_variant: "branco",
-	      in_stock: true, //caso o produto esteja indisponível, colocar como false
+	    in_stock: true, //caso o produto esteja indisponível, colocar como false
       	location_id: "abc12345",
       	price: 299.99,
       	quantity: 1
@@ -831,14 +834,14 @@ dataLayer.push({
 
 *Descrição Produtos:*
 
-| Nome 			| Variável 			| Exemplo 		| Descrição 					|
-| :-------------------	| :-------------------		| :---------------------| :-----------------------------------  	|
-| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 				|
-| item_id		| $id-produto$ 			| 'SKU_45678'		| ID do produto 				|
-| price			| $preco-produto$ 		| '299.99' 		| Preço do produto				|
-| item_brand 		| $marca-produto$ 		| 'Deca'		| Marca do produto 	 			|
-| item_category		| $categoria-produto$ 		| 'Cuba'		| Categoria do produto 				|
-| item_variant 		| $variacao-produto$ 		| 'branco'		| Variação do produto (tamanho - cor)		|
+| Nome 				| Variável 				| Exemplo 			| Descrição 							|
+| :---------------	| :-----------------	| :---------------- | :-----------------------------	  	|
+| item_name 		| $nome-produto$ 		| 'Cuba de Apoio' 	| Nome do produto 						|
+| item_id			| $id-produto$ 			| 'SKU_45678'		| ID do produto 						|
+| price				| $preco-produto$ 		| '299.99' 			| Preço do produto						|
+| item_brand 		| $marca-produto$ 		| 'Deca'			| Marca do produto 	 					|
+| item_category		| $categoria-produto$ 	| 'Cuba'			| Categoria do produto 					|
+| item_variant 		| $variacao-produto$ 	| 'branco'			| Variação do produto (tamanho - cor)	|
 | item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
 
 <br />
@@ -873,7 +876,7 @@ dataLayer.push({
       	item_list_id: "98765",
       	item_list_name: "Cuba de Apoio",
       	item_variant: "branco",
-	      in_stock: true, //caso o produto esteja indisponível, colocar como false
+	    in_stock: true, //caso o produto esteja indisponível, colocar como false
       	location_id: "abc12345",
       	price: 299.99,
       	quantity: 1
@@ -890,4 +893,4 @@ dataLayer.push({
 
 ### Considerações finais: 
 
->Em caso de dúvidas, podem consultar a documentação técnica oficial do Google: Link(https://developers.google.com/tag-platform/tag-manager/datalayer?hl=pt-br)
+>Em caso de dúvidas, podem consultar a documentação técnica oficial do Google: Link(https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?hl=pt-br&client_type=gtm)
