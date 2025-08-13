@@ -127,16 +127,19 @@ Caso a informação solicitada não estiver disponível retornar 'nao_disponivel
 **1 - Menu:**<br />
 
 - **Quando:** Ao clicar em alguma das opções no Menu;
-- **Onde:** Menu Principal e Menu da Loja (ícones);
+- **Onde:** Menu Principal e Menu da Loja (ícones); "Submenu" é a lista que carrega ao passar o mouse pelo menu principal
 
 ```html
 dataLayer.push({
 		'event': 'menu',
 		'menu_principal': '$item-clicado$',
 		'menu_loja': '$item-clicado$',
-		'submenu_loja': '$item-clicado$'
+		'submenu': '$item-clicado$'
 	});
 ```
+[Imagem Menu Principal](https://duratexsa.sharepoint.com/:i:/r/sites/drivetimenegciosdigitais/Documentos%20Compartilhados/Web%20Analytics/Tagueamento/Imagens%20Tela/Casa%20Dexco%20IMG/menu-principal.png?csf=1&web=1&e=0fltce)
+[Imagem Menu Loja](https://duratexsa.sharepoint.com/:i:/r/sites/drivetimenegciosdigitais/Documentos%20Compartilhados/Web%20Analytics/Tagueamento/Imagens%20Tela/Casa%20Dexco%20IMG/menu-loja_icones.png?csf=1&web=1&e=PF766f)
+
 
 <br />
 
@@ -162,6 +165,8 @@ dataLayer.push({
 	});
 ```
 
+[Imagem Banners](https://duratexsa.sharepoint.com/:i:/r/sites/drivetimenegciosdigitais/Documentos%20Compartilhados/Web%20Analytics/Tagueamento/Imagens%20Tela/Casa%20Dexco%20IMG/banner-principal-01.png?csf=1&web=1&e=fNhZzW)
+
 <br />
 
 | Nome 			| Variável 				| Exemplo 							| Descrição 				|
@@ -183,11 +188,79 @@ dataLayer.push({
 	});
 ```
 
+[Imagem Destaques](https://duratexsa.sharepoint.com/:i:/r/sites/drivetimenegciosdigitais/Documentos%20Compartilhados/Web%20Analytics/Tagueamento/Imagens%20Tela/Casa%20Dexco%20IMG/destaques-01.png?csf=1&web=1&e=h2Gfi5)
+
 <br />
 
 | Nome 			| Variável 				| Exemplo 							| Descrição 				|	
 | :------------	| :-------------------	| :---------------------			| :------------------------	|
 | banner		| $nome-banner$ 		| 'Junta Seca', '5% off Pix' e etc	| Nome do banner clicado	|
+
+<br />
+
+**4 - Navegue por Ambiente:**<br />
+
+- **Quando:** Ao clicar em um ambiente para navegação na loja;
+- **Onde:** Ambientes;
+
+```html
+dataLayer.push({
+		'event': 'ambientes',
+		'ambientes': '$nome-ambiente$'
+	});
+```
+
+[Imagem Ambientes](https://duratexsa.sharepoint.com/:i:/r/sites/drivetimenegciosdigitais/Documentos%20Compartilhados/Web%20Analytics/Tagueamento/Imagens%20Tela/Casa%20Dexco%20IMG/novo-ambiente-01.png?csf=1&web=1&e=bWGDqT)
+
+<br />
+
+| Nome 			| Variável 				| Exemplo 						| Descrição 				|	
+| :------------	| :-------------------	| :---------------------		| :------------------------	|
+| ambientes		| $nome-ambientes$ 		| 'Cozinha', 'Banheiro' e etc	| Nome do ambiente clicado	|
+
+<br />
+
+**5 - Compre por Cor:**<br />
+
+- **Quando:** Ao clicar no módulo "Compre por Cor";
+- **Onde:** Compre por Cor;
+
+```html
+dataLayer.push({
+		'event': 'tipo-cor',
+		'tipo-cor': '$tipo-cor$'
+	});
+```
+
+[Imagem Compre por Cor](https://duratexsa.sharepoint.com/:i:/r/sites/drivetimenegciosdigitais/Documentos%20Compartilhados/Web%20Analytics/Tagueamento/Imagens%20Tela/Casa%20Dexco%20IMG/compre-por-cor-01.png?csf=1&web=1&e=A7DC37)
+
+<br />
+
+| Nome 			| Variável 			| Exemplo 					| Descrição 				|	
+| :------------	| :----------------	| :---------------------	| :------------------------	|
+| tipo-cor		| $tipo-cor$ 		| 'Branco', 'Cromado' e etc	| Nome da Cor selecionada	|
+
+<br />
+
+**6 - Marcas Favoritas:**<br />
+
+- **Quando:** Ao selecionar uma marca, no módulo de "Marcas Favoritas";
+- **Onde:** Marcas Favoritas;
+
+```html
+dataLayer.push({
+		'event': 'marcas-favoritas',
+		'marcas-favoritas': '$nome-marca$'
+	});
+```
+
+[Imagem Marcas Favoritas](https://duratexsa.sharepoint.com/:i:/r/sites/drivetimenegciosdigitais/Documentos%20Compartilhados/Web%20Analytics/Tagueamento/Imagens%20Tela/Casa%20Dexco%20IMG/favoritos-01.png?csf=1&web=1&e=JdHJpV)
+
+<br />
+
+| Nome 				| Variável 				| Exemplo 					| Descrição 				|	
+| :------------		| :-------------------	| :---------------------	| :------------------------	|
+| marcas-favoritas	| $marcas-favoritas$ 	| 'Deca', 'Portinari' e etc	| Nome do Marca escolhida	|
 
 <br />
 
