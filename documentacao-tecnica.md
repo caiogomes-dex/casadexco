@@ -588,7 +588,7 @@ dataLayer.push({
 <script>
 dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
-  event: "add_to_wishlist",
+  event: "view_cart",
   ecommerce: {
     currency: "BRL",
     value: 7.77,
