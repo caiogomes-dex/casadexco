@@ -270,7 +270,7 @@ dataLayer.push({
 
 <br />
 
-### Lista de Produtos:
+### 01 - Lista de Produtos:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no carregamento de uma página de lista de produtos.
 
@@ -340,7 +340,7 @@ dataLayer.push({
 
 <br />
 
-### Select Item (Product click):
+### 02 - Select Item (Product click):
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no clique em algum produto.
 
@@ -390,7 +390,7 @@ dataLayer.push({
 
 <br />
 
-### View Item (Product Detail):
+### 03 - View Item (Product Detail):
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no carregamento da página de um produto.
 
@@ -439,7 +439,7 @@ dataLayer.push({
 | item_list_name 	| $lista-produto$ 		| 'Cuba de Apoio'	| Nome da lista de produtos 			|
 <br />
 
-### AddToCart:
+### 04 - AddToCart:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no clique do CTA de adição de produto ao carrinho.
 
@@ -490,7 +490,7 @@ dataLayer.push({
 
 <br />
 
-### Remove From Cart:
+### 05 - Remove From Cart:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no clique do botão para remover um produto do carrinho.
 
@@ -541,7 +541,7 @@ dataLayer.push({
 
 <br />
 
-### Adicionar à lista de desejos
+### 06 - Adicionar à lista de desejos
 
 - **Onde** O objeto javascript (dataLayer) abaixo deve ser disparado quando o usuário/cliente clicar em "adicionar produto à lista de desejo" ou "favoritar" o produto.
 
@@ -580,7 +580,7 @@ dataLayer.push({
 
 <br />
 
-### View Cart
+### 07 - View Cart
 
 - **Onde** O objeto javascript (dataLayer) abaixo deve ser disparado após o usuário/cliente clicar em "ir para o meu carrinho", e carregar a tela "Meu Carrinho". 
 
@@ -621,7 +621,7 @@ dataLayer.push({
 
 <br />
 
-### Promotion Impression:
+### 08 - Promotion Impression:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez na visualização de um banner.
 
@@ -661,7 +661,7 @@ dataLayer.push({
 
 <br />
 
-### Promotion Click:
+### 09 - Promotion Click:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado o usuário clicar em um banner.
 
@@ -720,7 +720,7 @@ dataLayer.push({
 
 <br />
 
-### Checkout:
+### 10 - Checkout:
 
 >Meça a primeira etapa do processo de finalização da compra enviando um evento begin_checkout e definindo os campos relevantes para um ou mais itens: Nessa etapa, um cupom pode ser incluído no pedido inteiro ao ser adicionado ao evento. Ele também pode ser aplicado a um determinado item por inclusão em elementos específicos na matriz de items. Para detalhes sobre os parâmetros disponíveis, consulte a Referência de eventos.
 
@@ -777,7 +777,7 @@ dataLayer.push({
 
 <br />
 
-### Shippping Info:
+### 11 - Frete:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no carregamento da página de transação, e se o usuário acessar novamente o link ou atualizar a página, o objeto não deve ser disparado novamente.
 
@@ -820,7 +820,7 @@ dataLayer.push({
 
 <br />
 
-### Add Payment Info:
+### 12 - Pagamento Step:
 
 - **Onde:** o evento add_payment_info deve disparar quando um usuário enviar as informações de pagamento. Se aplicável, inclua payment_type nesse evento para a forma de pagamento selecionada.
 
@@ -863,7 +863,7 @@ dataLayer.push({
 
 <br />
 
-### Purchase:
+### 13 - Purchase:
 
 - **Onde:** O objeto javascript (dataLayer) abaixo deve ser disparado uma única vez no carregamento da página de transação, e se o usuário acessar novamente o link ou atualizar a página, o objeto não deve ser disparado novamente.
 
@@ -919,7 +919,7 @@ dataLayer.push({
 
 <br />
 
-### Reembolso (refund):
+### 14 - Reembolso (refund):
 
 - **Onde:** Meça os reembolsos enviando um evento refund com o transaction_id relevante especificado e um ou mais itens definidos com item_id e quantity. Recomendamos incluir informações do item no evento refund para consultar as métricas de reembolso no Google Analytics.
 
